@@ -6,34 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<style>
+  .card:hover {
+    background: rgb(6, 5, 100);
+    color: white;
+  }
+  .card:hover button{
+    background: rgb(0, 0, 21);
+    color: white;
+  }
+  .card button{
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .card {
+    transition: all 0.3s ease-in-out;
+  }
+</style>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+
+  <nav class="navbar navbar-expand-lg px-4 py-3 bg-body-emphasis ">
+    <div class="container-fluid"> 
       <a class="navbar-brand" href="#">SNGR</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link active" aria-current="page" href="#">Product</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link active" aria-current="page" href="#">Feature</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link active" aria-current="page" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link active" aria-current="page" href="#">Abot us</a>
           </li>
 
@@ -41,42 +57,116 @@
         <form class="d-flex" role="search">
 
           <button class="btn" type="submit">Log in</button>
-          <button class="btn btn-success" type="submit">Get started for free</button>
+          <button class="btn btn-info" type="submit">Get started for free</button>
         </form>
       </div>
     </div>
   </nav>
-  <div class="container d-flex flex-column align-items-center">
-    <h1>Ready to get started?</h1>
-    <p>Choose a plan tailored to your needs</p>
-    <div class="d-flex align-items-end">
-      <p class="">Monthly</p>
-      <div class="form-check txtsytyyjty]dfy6j vvftty[[ytdfg form-switch mx-4">
-        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+  <div class="bg-light  pt-1 pt-lg-5 h-100">
+    <div class="container d-flex flex-column align-items-center">
+      <h1>Ready to get started?</h1>
+      <p class="fs-5 text-secondary">Choose a plan tailored to your needs</p>
+      <div class="d-flex align-items-end my-2">
+        <p class="text-secondary fs-5">Monthly</p>
+        <div class="form-check form-switch mx-4">
+          <input class="form-check-input mb-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        </div>
+        <div class=" fs-5">
+          <p>20% off</p>
+          <p>Yearly</p>
+        </div>
       </div>
       <div class="">
-        <p>20% off</p>
-        <p>Yearly</p>
-      </div>
-    </div>
-    <div class="bg-primary">
-      <div class="row">
-        <div class="card col-md-4 col-12" style="width: 18rem; min-height: 600px;">
-          <div class="card-body">
-            <h2 class="fs-4">Lite</h2>
-            <p class="">Perfect to get started</p>
-            <div class="">
-              <h5 class="card-title fs-1"><span>$</span>11</h5>
-              <p class="card-text">per seat/month</p>
+        <div class="row justify-content-center">
+          <div class="card col-md-4 col-12 border-0 mx-2 my-4 my-lg-0" style="width: 20rem; min-height: 500px;">
+            <div class="card-body ">
+              <h2 class="fs-4"><i class="bi bi-tree"></i> Lite</h2>
+              <p class="text-secondary">Perfect to get started</p>
+              <div class="d-flex align-items-end pb-1">
+                <h5 class="card-title mb-0" style="font-size: 80px; font-weight: 300;"><span
+                    class="text-secondary">$</span>11</h5>
+                <p class="card-text text-secondary mb-2">per seat/month</p>
+              </div>
+              <button class="btn btn-info w-100 my-3" type="button">Try 7 days for free</button>
+              <p class="h6 mt-4 mb-3">Lite includes:</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary h4 text-primary"></i> CMS integration
+              </p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary h4 text-primary"></i> Email & SMS
+                reminders</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary h4 text-primary"></i> Customer
+                support 24/7</p>
+              <p class="my-2 text-white h4">.</p>
+              <div><button class="position-absolute w-100 mt-4 rounded-bottom-5 border-0"
+                  style="left: 0; height: 48px; "> See all features</button></div>
             </div>
-            <button class="btn btn-success w-100 my-3" type="button">Button</button>
-            <p>Lite includes:</p>
-            <p>CMS integration</p>
-            <p>Email & SMS reminders</p>
-            <p>Customer support 24/7</p>
-            <div><button style=""> See all features</button></div>
+          </div>
+          <div class="card col-md-4 col-12 border-0 mx-2 my-4 my-lg-0" style="width: 20rem; min-height: 500px;">
+            <div class="card-body ">
+              <h2 class="fs-4"> <i class="bi bi-robot"></i> Pro</h2>
+              <p class="text-secondary">Best for Professinals</p>
+              <div class="d-flex align-items-end pb-1">
+                <h5 class="card-title mb-0" style="font-size: 80px; font-weight: 300;"><span
+                    class="text-secondary">$</span>19</h5>
+                <p class="card-text text-secondary mb-2">per seat/month</p>
+              </div>
+              <button class="btn btn-info w-100 my-3" type="button">Get started</button>
+              <p class="h6 mt-4 mb-3">Everything in Lite,plus:</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Advanced analytics</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> 100+ integration</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Chat widget</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Templates library</p>
+              <div><button class="position-absolute w-100 mt-4 rounded-bottom-5 border-0"
+                  style="left: 0; height: 48px; "> See all features</button></div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-12 border-0 mx-2 my-4 my-lg-0" style="width: 20rem; min-height: 500px;">
+            <div class="card-body ">
+              <h2 class="fs-4">Ultimate</h2>
+              <p class="text-secondary">Toolset for hard players</p>
+              <div class="d-flex align-items-end pb-1">
+                <h5 class="card-title mb-0" style="font-size: 80px; font-weight: 300;"><span
+                    class="text-secondary">$</span>35</h5>
+                <p class="card-text text-secondary mb-2">per seat/month</p>
+              </div>
+              <button class="btn btn-info w-100 my-3" type="button">Get started</button>
+              <p class="h6 mt-4 mb-3">Everything in Pro,plus:</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Daily performance reports</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Dedicated assistant</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Artificial intelligence</p>
+              <p class="my-2 text-secondary"><i class="bi bi-check h4 text-primary"></i> Marketing tools & automations
+              </p>
+              <div><button class="position-absolute w-100 mt-4 rounded-bottom-5 border-0"
+                  style="left: 0; height: 48px; "> See all features</button></div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="my-5 container w-75 pt-5">
+    <div class="d-flex align-items-center">
+      <div class="w-50">Overview</div>
+      <div class="w-50 d-flex justify-content-between align-items-center">
+        <p class="">Light</p>
+        <p class="">Pro</p>
+        <p class="">Ultimate</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="w-50">CMS integration</div>
+      <div class="w-50 d-flex justify-content-between align-items-center">
+        <p class=""><i class="bi bi-check h4 text-primary"></i></p>
+        <p class=""><i class="bi bi-check h4 text-primary"></i></p>
+        <p class=""><i class="bi bi-check h4 text-primary"></i></p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="w-50">Advanced analytics</div>
+      <div class="w-50 d-flex justify-content-between align-items-center">
+        <p class="text-white">....</p>
+        <p class=""><i class="bi bi-check h4 text-primary"></i></p>
+        <p class=""><i class="bi bi-check h4 text-primary"></i></p>
       </div>
     </div>
   </div>
@@ -84,9 +174,9 @@
 
 
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 </body>
 
